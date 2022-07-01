@@ -50,12 +50,12 @@ RSVP. She has asked for these key features:
 
 ## 🧩 Requires
 
-- [go](https://go.dev/dl/)
+- [🦫 go](https://go.dev/dl/)
 
-## 💨 Run
+## 💨 Run Locally
 
 ```sh
-go run main.go
+go run .
 ```
 
 &nbsp;
@@ -67,7 +67,7 @@ go run main.go
 </p>
 <p align="center">
   Copyright &copy; 2022-present
-  <a href="https://github.com/glepnir" target="_blank">NikolaM-Dev</a>
+  <a href="https://github.com/NikolaM-dev" target="_blank"> NikolaM-Dev </a>
 </p>
 <p align="center">
   <a href="https://github.com/NikolaM-Dev/party-invites/blob/master/LICENSE"
