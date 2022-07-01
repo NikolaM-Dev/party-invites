@@ -36,11 +36,25 @@ func listHandler(writer http.ResponseWriter, request *http.Request) {
 	templates["list"].Execute(writer, responses)
 }
 
+type formData struct {
+	*Rsvp
+	Errors []string
+}
+
+func formHandler(writer http.ResponseWriter, request *http.Request) {
+	if request.Method == http.MethodGet {
+		templates["form"].Execute(writer, formData{
+			Rsvp: &Rsvp{}, Errors: []string{},
+		})
+	}
+}
+
 func main() {
 	loadTemplates()
 
 	http.HandleFunc("/", welcomeHandler)
 	http.HandleFunc("/list", listHandler)
+	http.HandleFunc("/form", formHandler)
 
 	err := http.ListenAndServe(":5000", nil)
 	if err != nil {
