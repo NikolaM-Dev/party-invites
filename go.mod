@@ -1,3 +1,3 @@
-module partyinvites
+module github.com/NikolaM-Dev/partyinvites
 
 go 1.18
